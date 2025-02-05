@@ -2,6 +2,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
 }
 
 .title {
@@ -9,13 +13,15 @@
   flex-direction: row;
   color: rgb(166, 184, 201);
   font-size: 48px;
-  opacity: 0; /* Inicialmente, el título estará oculto */
-  animation: appearAndAnimate 1s 1s forwards; /* La animación se inicia después de 2 segundos y se mantiene en su estado final */
+  opacity: 0;
+  will-change: transform;
+  white-space: nowrap;
+  animation: appearAndAnimate 1s 1s forwards;
 }
 
 @keyframes appearAndAnimate {
   0% {
-    transform: translateY(-100%);
+    transform: translateY(20px);
     opacity: 0;
   }
   100% {
@@ -26,11 +32,12 @@
 
 .span {
   color: #00ccff;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
   text-shadow: 0 0 10px #00ccff, 0 0 20px #00ccff, 0 0 30px #00ccff;
   animation: parpadeo-neon 0.1s 1.7s 4;
 }
 
-/* Crear una animación de parpadeo */
 @keyframes parpadeo-neon {
   0%,
   100% {
@@ -39,8 +46,4 @@
   50% {
     opacity: 0;
   }
-}
-
-.elemento-parpadeante {
-  animation: parpadeo-neon 1s infinite;
 }

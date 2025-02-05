@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen`}>
-      <div className="relative h-screen w-full">
+      <div className="relative h-screen w-full bg-black">
         {/* Video de fondo */}
         <video
           autoPlay

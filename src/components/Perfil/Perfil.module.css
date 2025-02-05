@@ -1,14 +1,14 @@
 .container {
-  display: flex;
-  justify-content: end;
-  margin-right: 2rem;
-  margin-top: -7rem;
+  position: fixed;
+  right: 2rem;
+  top: 100px; /* Ajusta este valor según necesites */
+  z-index: 10; /* Para asegurar que esté por encima de otros elementos */
 }
 
 .perfil {
   opacity: 0;
   transition: opacity 3.5s ease;
-  width: 17%;
+  width: 200px; /* Es mejor usar un valor fijo en px aquí */
   border-radius: 50%;
   box-shadow: 0 0 30px #c2d7dc, 0 0 40px #c2d7dc, 0 0 50px #c2d7dc;
 }
