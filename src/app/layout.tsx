@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Navbar from '../components/Navbar/Navbar'
+import BgMusic from '../components/BgMusic/BgMusic'
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,10 +26,33 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen`}>
+      <div className="relative h-screen w-full">
+        {/* Video de fondo */}
+        <video
+          autoPlay
+          loop
+          muted
+          className="absolute top-0 left-0 w-full h-full object-cover z-0"
+        >
+          <source src="/videos/background-video.mp4" type="video/mp4" />
+          Tu navegador no soporta el elemento video.
+        </video>
+
+        {/* Overlay opcional para oscurecer el video y mejorar la legibilidad */}
+        <div className="absolute top-0 left-0 w-full h-full bg-black/50 z-10"></div>
+        {/* Contenido principal */}
+        <div className="relative z-20 h-full w-full flex  text-white p-4">
+          <BgMusic />
+        <Navbar />
+        <main className="w-full mt-16">
+          {children}
+        </main>
+        </div>
+      </div>
+        
+        
+
       </body>
     </html>
   );

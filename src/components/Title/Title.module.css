@@ -1,13 +1,16 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .title {
   display: flex;
+  flex-direction: row;
   color: rgb(166, 184, 201);
   font-size: 48px;
-  text-align: center;
-  margin-bottom: 40px;
-  position: relative;
   opacity: 0; /* Inicialmente, el título estará oculto */
   animation: appearAndAnimate 1s 1s forwards; /* La animación se inicia después de 2 segundos y se mantiene en su estado final */
-  margin: 2rem;
 }
 
 @keyframes appearAndAnimate {

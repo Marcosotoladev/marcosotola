@@ -19,6 +19,7 @@ const Contact = () => {
 
   return (
     <>
+    <div className={styles.container}>
       <div className={`${styles.contact} ${isVisible ? styles.entrada : ""}`}>
         <div className={styles.phone}>
           <Phone size={24} className="mr-4 " color="#00ffff"/> {/* Usamos el ícono de teléfono */}
@@ -28,6 +29,7 @@ const Contact = () => {
           <Mail size={24} className="mr-4 " color="#00ffff" /> {/* Usamos el ícono de correo */}
           <p>marcosotoladev@gmail.com</p>
         </div>
+      </div>
       </div>
     </>
   );

@@ -1,25 +1,19 @@
+"use client";
+
 import React from "react";
-import "./Buttons.css";
+import styles from "./Buttons.module.css";
+import Link from "next/link";
 
 const Buttons = () => {
-  const scrollToSection = (id) => {
-    const section = document.getElementById(id);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
-    <>
-      <div className="btnContainer">
-        <button className="btn1" onClick={() => scrollToSection("works")}>
-          my works
-        </button>
-        <button className="btn2" onClick={() => scrollToSection("skills")}>
-          skills
-        </button>
-      </div>
-    </>
+    <div className={styles.btnContainer}>
+      <Link href="/works" className={styles.btn1}>
+        my works
+      </Link>
+      <Link href="/skills" className={styles.btn2}>
+        skills
+      </Link>
+    </div>
   );
 };
 

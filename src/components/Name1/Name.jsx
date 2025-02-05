@@ -6,15 +6,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const Name = () => {
-  const handleClick = (event) => {
-    event.preventDefault();
-    const aboutSection = document.getElementById('about');
-    aboutSection.scrollIntoView({ behavior: 'smooth' });
-  };
-
+  
   return (
     <>
-      <Link href="#about" onClick={handleClick}>
+      <Link href="#about" >
         <div className='flex '>
           <Image src="/images/logo.png" alt="logo" width={80} height={80} className={styles.name} />
           <h2 className={styles.name}>arco Sotola</h2>

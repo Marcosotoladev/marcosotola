@@ -18,20 +18,12 @@ const Perfil = () => {
     return () => clearTimeout(showPerfilAfterDelay);
   }, []);
 
-  const scrollToAbout = () => {
-    const aboutSection = document.getElementById('about');
-    if (aboutSection) {
-      aboutSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <div className={styles.container}>
     <Image
       src={imgPerfil}
       alt="perfil"
       className={`${styles.perfil} ${isVisible ? styles.fadeIn : ''}`}
-      onClick={scrollToAbout}
       style={{ cursor: 'pointer' }} // Indica que la imagen es clickeable
     />
     </div>

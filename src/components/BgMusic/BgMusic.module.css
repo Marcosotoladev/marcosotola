@@ -1,0 +1,40 @@
+/* Estilos para el botón de música */
+.music-button {
+    margin-right: 2rem;
+    background-color: transparent;
+    color: #fff;
+    font-size: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: solid 1px #fafafa;
+    opacity: 0;
+    animation: slideInFromLeft 0.5s 0.5s forwards;
+    box-shadow: 0 0 10px rgba(6, 232, 244, 0);
+    transition: all 0.3s ease;
+}
+
+.btnPlay{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Definición de la animación */
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.music-button:hover {
+    transform: scale(0.8);
+    box-shadow: 0 0 20px rgba(194, 233, 235, 0.8); /* Brillo de neón */
+    background-color: rgba(6, 232, 244, 0.2); /* Fondo transparente de neón */
+}
