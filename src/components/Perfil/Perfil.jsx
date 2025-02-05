@@ -26,6 +26,7 @@ const Perfil = () => {
   };
 
   return (
+    <div className={styles.container}>
     <Image
       src={imgPerfil}
       alt="perfil"
@@ -33,6 +34,7 @@ const Perfil = () => {
       onClick={scrollToAbout}
       style={{ cursor: 'pointer' }} // Indica que la imagen es clickeable
     />
+    </div>
   );
 };
 

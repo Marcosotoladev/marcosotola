@@ -1,0 +1,37 @@
+/* Contact.css */
+
+.contact {
+    opacity: 0; /* El componente es invisible inicialmente */
+    transition: opacity 1s; /* Transición para hacerlo aparecer suavemente */
+    margin: 0 10px;
+    color: rgb(166, 184, 201);
+    font-size: 17px;
+    text-decoration: none;
+  }
+  
+  .contact.entrada {
+    opacity: 1;
+  }
+  
+  .phone {
+    display: flex;
+    align-items: center;
+    margin-top: -8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .phone i {
+    padding: 1rem;
+    color: #00ffff;
+  }
+  
+  .gmail {
+    display: flex;
+    align-items: center;
+  }
+  
+  .gmail i {
+    padding: 1rem;
+    color: #00ffff;
+  }
+  

@@ -1,18 +1,21 @@
+.container {
+  display: flex;
+  justify-content: end;
+}
 
-  .perfil {
-    opacity: 0; 
-    transition: opacity 3.5s ease; 
-    width: 17%;
-    border-radius: 50%;
-    box-shadow: 0 0 30px #c2d7dc, 0 0 40px #c2d7dc, 0 0 50px #c2d7dc;
-    margin: 1rem;
-  }
-  
-  .fadeIn {
-    opacity: 0.35; 
-  }
+.perfil {
+  opacity: 0;
+  transition: opacity 3.5s ease;
+  width: 17%;
+  border-radius: 50%;
+  box-shadow: 0 0 30px #c2d7dc, 0 0 40px #c2d7dc, 0 0 50px #c2d7dc;
+ margin: 1rem;
+}
 
-  .perfil:hover{
-    scale: 1.03;
-  }
-  
+.fadeIn {
+  opacity: 0.35;
+}
+
+.perfil:hover {
+  scale: 1.03;
+}

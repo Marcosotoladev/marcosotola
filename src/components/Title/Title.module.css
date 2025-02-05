@@ -1,0 +1,43 @@
+.title {
+  display: flex;
+  color: rgb(166, 184, 201);
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  opacity: 0; /* Inicialmente, el título estará oculto */
+  animation: appearAndAnimate 1s 1s forwards; /* La animación se inicia después de 2 segundos y se mantiene en su estado final */
+  margin: 2rem;
+}
+
+@keyframes appearAndAnimate {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.span {
+  color: #00ccff;
+  text-shadow: 0 0 10px #00ccff, 0 0 20px #00ccff, 0 0 30px #00ccff;
+  animation: parpadeo-neon 0.1s 1.7s 4;
+}
+
+/* Crear una animación de parpadeo */
+@keyframes parpadeo-neon {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.elemento-parpadeante {
+  animation: parpadeo-neon 1s infinite;
+}
