@@ -21,3 +21,11 @@
   scale: 1.03;
   transition: ease-in-out 0.2s;
 }
+
+.text{
+  color: rgb(166, 184, 201);
+  font-size: 1rem;
+  font-weight: 300;
+  text-shadow: 0 0 10px #c2d7dc, 0 0 20px #c2d7dc, 0 0 30px #c2d7dc;
+  text-align: center;
+}

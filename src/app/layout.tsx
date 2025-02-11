@@ -42,9 +42,9 @@ export default function RootLayout({
           <div className="fixed top-0 left-0 w-full h-full bg-black/50 z-10"></div>
 
           {/* Contenido principal */}
-          <div className="relative z-20 min-h-screen w-full flex text-white p-4">
+          <div className="relative z-20 min-h-screen w-full flex text-white">
             <BgMusic />
-            <main className="w-full mt-16">
+            <main className="w-full p-4">
               {children}
             </main>
           </div>

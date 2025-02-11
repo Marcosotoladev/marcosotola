@@ -1,0 +1,73 @@
+.btnContainer{
+    margin-top: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; 
+    animation: buttonsAnimate 1s 1s forwards;
+}
+
+.btn1 {
+    width: 25%;
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid #06e8f4;
+    color: #fafafa;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1rem;
+    background-color: transparent;
+    letter-spacing: 3px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Estilos para la animación neon */
+@keyframes neon {
+    0%, 100% {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8), 0 0 40px #06e8f4, 0 0 70px #06e8f4, 0 0 80px #06e8f4, 0 0 100px #06e8f4;
+    }
+}
+
+/* Estilos para el efecto de agrandamiento */
+.btn1:hover {
+    transform: scale(1.05);
+    border-color: #06e8f4;
+    animation: neon 1.5s infinite alternate;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn2{
+    width: 25%;
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid #06e8f4;
+    color: #fafafa;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1rem;
+    background-color: transparent;
+    letter-spacing: 3px;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn2:hover {
+    transform: scale(1.05);
+    border-color: #06e8f4;
+    animation: neon 1.5s infinite alternate;
+    transition: all 0.3s ease-in-out;
+}
+
+
+@keyframes buttonsAnimate {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }

@@ -29,6 +29,7 @@ const Perfil = () => {
       className={`${styles.perfil} ${isVisible ? styles.fadeIn : ''}`}
       style={{ cursor: 'pointer' }} // Indica que la imagen es clickeable
     />
+    <p className={styles.text}>About me</p>
     </Link>
     </div>
   );

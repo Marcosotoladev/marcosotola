@@ -63,13 +63,13 @@ export default function CreativeCarousel() {
       <div className="absolute bottom-10 flex space-x-4 z-50">
         <button 
           onClick={handlePrev} 
-          className="bg-black/50 text-white p-2 rounded-full hover:bg-black/75 transition"
+          className="bg-gray-800/75 text-white p-2 rounded-full hover:bg-black/75 transition"
         >
           ← Previous
         </button>
         <button 
           onClick={handleNext} 
-          className="bg-black/50 text-white p-2 rounded-full hover:bg-black/75 transition"
+          className="bg-gray-800/75 text-white p-2 rounded-full hover:bg-black/75 transition"
         >
           Next →
         </button>

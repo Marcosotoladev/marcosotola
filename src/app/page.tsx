@@ -14,6 +14,6 @@ export default function Home() {
     return () => clearTimeout(timer);
   }, []);
 
-  return <div className="flex justify-center items-center">{showHome ? <HomePage /> : null}</div>;
+  return <div className="flex justify-center ">{showHome ? <HomePage /> : null}</div>;
 }
 
