@@ -9,15 +9,15 @@ import Navbar from '../../components/Navbar/Navbar';
 
 const page = () => {
   return (
-<div className='flex flex-col w-full '>
-  <div className='justify-start'><Name1 /></div>
+    <div className='flex flex-col w-full '>
+      <div ><Navbar /></div>
+      <div className='justify-start'><Name1 /></div>
+      <div ><Title /></div>
+      <div ><Perfil /></div>
+      <div ><Contact /></div>
+      <div ><Buttons /></div>
 
-  <div ><Title /></div>
-  <div ><Perfil /></div>
-  <div ><Contact /></div>
-  <div ><Buttons /></div>
-  
-</div>
+    </div>
 
   );
 };

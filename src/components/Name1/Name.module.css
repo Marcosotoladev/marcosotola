@@ -5,6 +5,8 @@
   font-weight: bold;
   display: flex;
   align-items: end;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
 }
 
 @keyframes nameInFromRight {
@@ -16,5 +18,15 @@
   100% {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
   }
 }

@@ -3,6 +3,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Code2, Palette, BookOpen, Share2 } from 'lucide-react';
+import Buttons from '../../components/Buttons/Buttons';
+import Name1 from '../../components/Name1/Name';
 
 const AboutSection = () => {
   const skills = [
@@ -14,6 +16,7 @@ const AboutSection = () => {
 
   return (
     <div className="min-h-screen  text-white py-16 px-4">
+      <Name1 />
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <motion.div 
@@ -22,7 +25,7 @@ const AboutSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h1 className="text-4xl font-bold mb-4">Sobre Mí</h1>
+          <h1 className="text-4xl font-bold mb-4">About me</h1>
           <div className="w-24 h-1 mx-auto rounded-full"></div>
         </motion.div>
 
@@ -86,13 +89,13 @@ const AboutSection = () => {
               whileHover={{ scale: 1.05 }}
               className="inline-block"
             >
-              <button className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-full font-medium transition-colors">
-                Ver Proyectos
-              </button>
             </motion.div>
           </motion.div>
         </div>
       </div>
+
+      <div ><Buttons /></div>
+
     </div>
   );
 };
