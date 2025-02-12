@@ -20,37 +20,38 @@ const CertificateModal = ({ isOpen, onClose, certificate }) => {
         onClick={onClose}
       >
         <motion.div
-          initial={{ scale: 0.8, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          exit={{ scale: 0.8, opacity: 0 }}
-          className="relative max-w-4xl w-full bg-slate-900/90 rounded-xl p-4 overflow-hidden"
-          onClick={e => e.stopPropagation()}
-        >
-          <button
-            onClick={onClose}
-            className="absolute top-4 right-4 text-white/60 hover:text-white z-10"
-          >
-            <X className="w-6 h-6" />
-          </button>
-          
-          <div className="mt-8">
-            <Image
-              src={certificate.certificateUrl}
-              alt={`Certificado de ${certificate.title}`}
-              width={1200}
-              height={800}
-              className="w-full h-auto rounded-lg"
-              priority
-              quality={85}
-              loading="eager"
-            />
-          </div>
+  initial={{ scale: 0.8, opacity: 0 }}
+  animate={{ scale: 1, opacity: 1 }}
+  exit={{ scale: 0.8, opacity: 0 }}
+  className="relative w-full max-w-3xl max-h-[90vh] bg-slate-900/90 rounded-xl p-4 overflow-auto"
+  onClick={e => e.stopPropagation()}
+>
+  <button
+    onClick={onClose}
+    className="absolute top-4 right-4 text-white/60 hover:text-white z-10"
+  >
+    <X className="w-6 h-6" />
+  </button>
+  
+  <div className="mt-8 flex justify-center">
+    <Image
+      src={certificate.certificateUrl}
+      alt={`Certificado de ${certificate.title}`}
+      width={1200}
+      height={800}
+      className="w-full max-w-full max-h-[80vh] object-contain rounded-lg"
+      priority
+      quality={85}
+      loading="eager"
+    />
+  </div>
 
-          <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-slate-900 to-transparent">
-            <h3 className="text-lg font-semibold">{certificate.title}</h3>
-            <p className="text-sm text-slate-300">{certificate.institution}</p>
-          </div>
-        </motion.div>
+  <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-slate-900 to-transparent">
+    <h3 className="text-lg font-semibold">{certificate.title}</h3>
+    <p className="text-sm text-slate-300">{certificate.institution}</p>
+  </div>
+</motion.div>
+
       </motion.div>
     </AnimatePresence>
   );
@@ -67,25 +68,70 @@ const CertificationsPage = () => {
       description: "Especialización en desarrollo frontend con enfoque en React.js, Next.js y tecnologías modernas de desarrollo web.",
       location: "Remote",
       type: "Título",
-      certificateUrl: "/certificates/henry-cert.webp"
+      certificateUrl: "/certificates/SoyHenry.webp"
     },
     {
       title: "Desarrollador Web Fullstack",
       institution: "Universidad Tecnológica Nacional BA",
-      date: "Octubre 2022",
+      date: "Junio 2023",
       description: "Desarrollo de aplicaciones web completas utilizando tecnologías modernas como React, Node.js y bases de datos SQL/NoSQL.",
       location: "Buenos Aires, Argentina",
       type: "Título",
-      certificateUrl: "/certificates/utn-cert.webp"
+      certificateUrl: "/certificates/fullStackUTN.webp"
     },
     {
-      title: "HTML, CSS, JavaScript, Express, SQL",
+      title: "Desarrollador Web Front-End",
+      institution: "Universidad Tecnológica Nacional BA",
+      date: "Diciembre 2022",
+      description: "Desarrollo de aplicaciones web completas utilizando tecnologías modernas como React, Node.js y bases de datos SQL/NoSQL.",
+      location: "Buenos Aires, Argentina",
+      type: "Título",
+      certificateUrl: "/certificates/frontEndUTN.webp"
+    },
+    {
+      title: "Front End Developer",
       institution: "Mimo",
-      date: "2023",
+      date: "Mayo 2024",
       description: "Curso especializado en fundamentos de desarrollo web y backend.",
       location: "Online",
       type: "Certificación",
-      certificateUrl: "/certificates/mimo-cert.webp"
+      certificateUrl: "/certificates/frontEndMimo.webp"
+    },
+    {
+      title: "CSS",
+      institution: "Mimo",
+      date: "Mayo 2024",
+      description: "Curso especializado en fundamentos de desarrollo web y backend.",
+      location: "Online",
+      type: "Certificación",
+      certificateUrl: "/certificates/cssMimo.webp"
+    },
+    {
+      title: "JavaScript",
+      institution: "Mimo",
+      date: "Mayo 2024",
+      description: "Curso especializado en fundamentos de desarrollo web y backend.",
+      location: "Online",
+      type: "Certificación",
+      certificateUrl: "/certificates/jsMimo.webp"
+    },
+    {
+      title: "SQL",
+      institution: "Mimo",
+      date: "Mayo 2024",
+      description: "Curso especializado en fundamentos de desarrollo web y backend.",
+      location: "Online",
+      type: "Certificación",
+      certificateUrl: "/certificates/sqlMimo.webp"
+    },
+    {
+      title: "HTML",
+      institution: "Mimo",
+      date: "Mayo 2024",
+      description: "Curso especializado en fundamentos de desarrollo web y backend.",
+      location: "Online",
+      type: "Certificación",
+      certificateUrl: "/certificates/htmlMimo.webp"
     },
     {
       title: "Marketing y Redes Sociales",

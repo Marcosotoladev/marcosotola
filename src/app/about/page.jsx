@@ -4,7 +4,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Code2, Palette, BookOpen, Share2 } from 'lucide-react';
 import Buttons from '../../components/Buttons/Buttons';
-import Name1 from '../../components/Name1/Name';
+import Logo from '../../components/Logo/Logo';
 
 const AboutSection = () => {
   const skills = [
@@ -15,8 +15,8 @@ const AboutSection = () => {
   ];
 
   return (
-    <div className="min-h-screen  text-white py-16 px-4">
-      <Name1 />
+    <div className="min-h-screen  text-white ">
+      <Logo />
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <motion.div 
