@@ -9,10 +9,17 @@
   transition: all 0.3s ease;
 }
 
+/* Ocultar el texto en pantallas pequeñas */
+@media (max-width: 768px) {
+  .name:not(img) {  /* Selecciona .name pero no cuando es una imagen */
+    display: none;
+  }
+}
+
 @keyframes nameInFromRight {
   0% {
     opacity: 0;
-    transform: translateX(400%);
+    transform: translateX(300%);
   }
 
   100% {
@@ -20,7 +27,6 @@
     transform: translateX(0);
   }
 }
-
 
 @keyframes shimmer {
   0% {

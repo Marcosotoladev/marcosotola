@@ -10,7 +10,7 @@ const ContactMenu = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShow(true);
-    }, 1500);
+    }, 100);
 
     return () => clearTimeout(timer);
   }, []);
@@ -20,28 +20,28 @@ const ContactMenu = () => {
   const socialLinks = [
     {
       icon: FaGithub,
-      href: "https://github.com",
+      href: "https://github.com/Marcosotola",
       color: "hover:text-[#2b3137]",
       label: "GitHub",
       hoverBg: "group-hover:bg-[#2b3137]/20",
     },
     {
       icon: FaLinkedin,
-      href: "https://linkedin.com",
+      href: "https://www.linkedin.com/in/marco-sotola-7103202b3/",
       color: "hover:text-[#0077b5]",
       label: "LinkedIn",
       hoverBg: "group-hover:bg-[#0077b5]/10",
     },
     {
       icon: FaSlack,
-      href: "https://slack.com",
+      href: "https://join.slack.com/t/mirasolucione-6517454/shared_invite/zt-2zr5erpsi-iGaEV20lY7HvXceZ0YYs_w",
       color: "hover:text-[#E01E5A]",
       label: "Slack",
       hoverBg: "group-hover:bg-[#E01E5A]/10",
     },
     {
       icon: FaDiscord,
-      href: "https://discord.com",
+      href: "https://discord.com/users/marcosotola_87542",
       color: "hover:text-[#5865F2]",
       label: "Discord",
       hoverBg: "group-hover:bg-[#5865F2]/10",
@@ -49,9 +49,9 @@ const ContactMenu = () => {
   ];
 
   return (
-    <div className="fixed top-0 left-0 right-0">
+    <div className=" top-0 left-0 right-0">
       <nav className="max-w-screen-xl mx-auto px-4 py-4 mt-8 text-white">
-        <div className="flex justify-center items-center gap-4 sm:gap-8">
+        <div className="flex justify-center items-center gap-2 sm:gap-4">
           {socialLinks.map((item, index) => {
             const Icon = item.icon;
             return (

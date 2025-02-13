@@ -19,6 +19,44 @@
   animation: appearAndAnimate 1s 1s forwards;
 }
 
+/* Media queries para tamaños responsivos */
+@media (max-width: 1024px) {
+  .title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 32px;
+  }
+  .container {
+    padding: 15px 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .title {
+    font-size: 24px;
+    white-space: normal; /* Permite que el texto se ajuste en varias líneas */
+    text-align: center;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    gap: 0.25rem; /* Espacio entre líneas */
+  }
+  .container {
+    padding: 10px 20px; /* Agrega padding horizontal */
+  }
+  .span {
+    margin: 0.25rem 0; /* Ajusta los márgenes para el apilamiento vertical */
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 20px;
+  }
+}
+
 @keyframes appearAndAnimate {
   0% {
     transform: translateY(20px);

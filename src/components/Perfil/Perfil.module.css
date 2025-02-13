@@ -1,16 +1,55 @@
 .container {
   position: fixed;
   right: 2rem;
-  top: 100px; /* Ajusta este valor según necesites */
-  z-index: 10; /* Para asegurar que esté por encima de otros elementos */
+  top: 100px;
+  z-index: 10;
 }
 
 .perfil {
   opacity: 0;
   transition: opacity 3.5s ease;
-  width: 200px; /* Es mejor usar un valor fijo en px aquí */
+  width: 200px;
   border-radius: 50%;
   box-shadow: 0 0 30px #c2d7dc, 0 0 40px #c2d7dc, 0 0 50px #c2d7dc;
+}
+
+/* Tamaños responsivos para la imagen */
+@media (max-width: 1024px) {
+  .perfil {
+    width: 180px;
+  }
+  .container {
+    right: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .perfil {
+    width: 150px;
+  }
+  .container {
+    right: 1rem;
+    top: 100px;
+  }
+}
+
+@media (max-width: 640px) {
+  .perfil {
+    width: 120px;
+  }
+  .container {
+    right: 0.75rem;
+    top: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .perfil {
+    width: 100px;
+  }
+  .text {
+    font-size: 0.875rem;
+  }
 }
 
 .fadeIn {
@@ -22,7 +61,7 @@
   transition: ease-in-out 0.2s;
 }
 
-.text{
+.text {
   color: rgb(166, 184, 201);
   font-size: 1rem;
   font-weight: 300;

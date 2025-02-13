@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Buttons = () => {
   return (
-    <div className={styles.btnContainer}>
+    <div className={styles.btnContainer} >
       <Link href="/works" className={styles.btn1}>
         my works
       </Link>

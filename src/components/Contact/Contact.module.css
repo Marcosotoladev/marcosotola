@@ -1,44 +1,83 @@
-/* Contact.css */
-
 .container {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    margin-top: 2rem;
-    margin-left: 5rem;
-  }
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 2rem;
+  margin-left: 5rem;
+}
 
 .contact {
-    opacity: 0; /* El componente es invisible inicialmente */
-    transition: opacity 1s; /* Transición para hacerlo aparecer suavemente */
-    margin: 0 10px;
-    color: rgb(166, 184, 201);
-    font-size: 17px;
-    
+  opacity: 0;
+  transition: opacity 1s;
+  margin: 0 10px;
+  color: rgb(166, 184, 201);
+  font-size: 17px;
+}
+
+.contact.entrada {
+  opacity: 1;
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.phone i {
+  padding: 1rem;
+  color: #00ffff;
+}
+
+.gmail {
+  display: flex;
+  align-items: center;
+}
+
+.gmail i {
+  padding: 1rem;
+  color: #00ffff;
+}
+
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+  .container {
+    margin-left: 2rem;
+    margin-top: 5rem;
   }
   
-  .contact.entrada {
-    opacity: 1;
+  .contact {
+    font-size: 15px;
   }
-  
-  .phone {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
+}
+
+@media (max-width: 640px) {
+  .container {
+    margin-left: 1rem;
+    margin-top: 7rem;
   }
-  
-  .phone i {
-    padding: 1rem;
-    color: #00ffff;
+
+  .contact {
+    font-size: 14px;
   }
-  
-  .gmail {
-    display: flex;
-    align-items: center;
+
+  .phone, .gmail {
+    flex-wrap: wrap;
+    gap: 0.5rem;
   }
-  
-  .gmail i {
-    padding: 1rem;
-    color: #00ffff;
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin-left: 0.5rem;
+    margin-top: 10rem;
   }
-  
+
+  .contact {
+    font-size: 13px;
+  }
+
+  .phone, .gmail {
+    margin-bottom: 0.75rem;
+  }
+}

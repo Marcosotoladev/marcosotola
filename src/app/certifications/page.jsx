@@ -68,7 +68,7 @@ const CertificationsPage = () => {
       description: "Especialización en desarrollo frontend con enfoque en React.js, Next.js y tecnologías modernas de desarrollo web.",
       location: "Remote",
       type: "Título",
-      certificateUrl: "/certificates/SoyHenry.webp"
+      certificateUrl: "/certificates/fsHenry.webp"
     },
     {
       title: "Desarrollador Web Fullstack",
@@ -87,6 +87,15 @@ const CertificationsPage = () => {
       location: "Buenos Aires, Argentina",
       type: "Título",
       certificateUrl: "/certificates/frontEndUTN.webp"
+    },
+    {
+      title: "Full Stack Developer",
+      institution: "Mimo",
+      date: "Febrero 2025",
+      description: "Curso especializado en fundamentos de desarrollo web y backend.",
+      location: "Online",
+      type: "Certificación",
+      certificateUrl: "/certificates/fsMimo.webp"
     },
     {
       title: "Front End Developer",
