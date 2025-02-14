@@ -19,7 +19,7 @@ const Logo = () => {
           transition={{ duration: 0.5 }}
         >
           <Image 
-            src="/logo/logo.png" 
+            src="/logo/logo.webp" 
             alt="logo" 
             width={80} 
             height={80} 
